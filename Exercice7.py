@@ -8,4 +8,4 @@ def anagrammes(mot):
             liste += [mot[0] + x for x in anagrammes(mot[1:])][1:]  
     return liste
  
-print(anagrammes(str(input())))
+print(anagrammes(str(input("Votre mot : "))))
