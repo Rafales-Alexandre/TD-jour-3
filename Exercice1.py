@@ -56,7 +56,7 @@ nmbr_pair = 0
 for pair in liste_entier:
     if int(pair)%2 == 0:
         nmbr_pair = nmbr_pair + 1
-print(f"Vous avez {nmbr_pair} pairs dans votre liste")
+print(f"Vous avez {nmbr_pair} nombres pair dans votre liste")
 
 #8
 somme_impair = 0
