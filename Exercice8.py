@@ -2,7 +2,7 @@ import random
 
 nmbr_vote = 20
 participants = ["Ashe", "Morty", "Squall", "Neo", "Lara"]
-vote = ["Pas bien", "Assez bien", "Bien", "Tres bien", "Excelent"]
+vote = ["Pas bien", "Assez bien", "Bien", "Tres bien", "Excellent"]
 liste = []
 
 for part in participants:
@@ -19,23 +19,23 @@ while len(scrutin) < int(nmbr_vote):
 result = {}
 result["Morty"] = 0
 for m in scrutin:
-    if m == "Morty Excelent" or m =="Morty Tres bien" or m =="Morty Bien":
+    if m == "Morty Excellent" or m =="Morty Tres bien" or m =="Morty Bien":
         result["Morty"] += 1
 result["Ashe"] = 0
 for m in scrutin:
-    if m == "Ashe Excelent" or m =="Ashe Tres bien" or m =="Ashe Bien":
+    if m == "Ashe Excellent" or m =="Ashe Tres bien" or m =="Ashe Bien":
         result["Ashe"] += 1
 result["Squall"] = 0
 for m in scrutin:
-    if m == "Squall Excelent" or m =="Squall Tres bien" or m =="Squall Bien":
+    if m == "Squall Excellent" or m =="Squall Tres bien" or m =="Squall Bien":
         result["Squall"] += 1
 result["Neo"] = 0
 for m in scrutin:
-    if m == "Neo Excelent" or m =="Neo Tres bien" or m =="Neo Bien":
+    if m == "Neo Excellent" or m =="Neo Tres bien" or m =="Neo Bien":
         result["Neo"] += 1
 result["Lara"] = 0
 for m in scrutin:
-    if m == "Lara Excelent" or m =="Lara Tres bien" or m =="Lara Bien":
+    if m == "Lara Excellent" or m =="Lara Tres bien" or m =="Lara Bien":
         result["Lara"] += 1
 
 dict = {}
@@ -67,62 +67,62 @@ elif len(new_dict) > 4:
 if len(new_dict) >1 :
     result2[key1] = 0
     for m in scrutin:
-        if m == key1+" Excelent": 
+        if m == key1+" Excellent": 
             result2[key1] += 1
     result2[key2] = 0
     for m in scrutin:
-        if m == key2+" Excelent":
+        if m == key2+" Excellent":
             result2[key2] += 1
 
 elif len(new_dict) >2:  
     result2[key1] = 0
     for m in scrutin:
-        if m == key1+" Excelent": 
+        if m == key1+" Excellent": 
             result2[key1] += 1
     result2[key2] = 0
     for m in scrutin:
-        if m == key2+" Excelent":
+        if m == key2+" Excellent":
             result2[key2] += 1 
     result2[key3] = 0
     for m in scrutin:
-        if m == key3+" Excelent":
+        if m == key3+" Excellent":
             result2[key3] += 1
 
 elif len(new_dict) >3:  
     result2[key1] = 0
     for m in scrutin:
-        if m == key1+" Excelent": 
+        if m == key1+" Excellent": 
             result2[key1] += 1
     result2[key2] = 0
     for m in scrutin:
-        if m == key2+" Excelent":
+        if m == key2+" Excellent":
             result2[key2] += 1 
     result2[key3] = 0
     for m in scrutin:
-        if m == key3+" Excelent":
+        if m == key3+" Excellent":
             result2[key3] += 1
     for m in scrutin:
-        if m == key4+" Excelent":
+        if m == key4+" Excellent":
             result2[key4] += 1
 
 elif len(new_dict) >4:  
     result2[key1] = 0
     for m in scrutin:
-        if m == key1+" Excelent": 
+        if m == key1+" Excellent": 
             result2[key1] += 1
     result2[key2] = 0
     for m in scrutin:
-        if m == key2+" Excelent":
+        if m == key2+" Excellent":
             result2[key2] += 1 
     result2[key3] = 0
     for m in scrutin:
-        if m == key3+" Excelent":
+        if m == key3+" Excellent":
             result2[key3] += 1
     for m in scrutin:
-        if m == key4+" Excelent":
+        if m == key4+" Excellent":
             result2[key4] += 1
     for m in scrutin:
-        if m == key5+" Excelent":
+        if m == key5+" Excellent":
             result2[key5] += 1
 else:
     print(key1, "à gagné les élections!")
