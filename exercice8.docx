@@ -1,0 +1,20 @@
+Exercice8 :
+Le programme est fonctionnel mais très mal optimisé et ne prend pas en compte l’ajout de nouveau participant ou qualité de vote différente.
+Dans un premier temps j’ai attribué les différentes variables de l’énoncé :
+Le nombre de vote, les différents participants et la qualité des votes.
+
+Dans une liste nommé liste je fais le premier tri avec une boucle dans une boucle qui va me permettre d’avoir comme valeur le nom du participant avec la qualité de son vote tout en retirant les vote que nous ne prenons pas en compte c’est-à-dire les « pas bien » ainsi que les « Assez bien ».
+
+Dans un deuxième temps je comptabilise pour chaque participants le nombre de vote aillant une qualité supérieure ou égale à « Bien » en les mettant dans un dictionnaire nommé « result » ce qui nous donnera pour key les noms des participant et en valeur leurs nombre de vote.
+
+Ensuite pour trouver qui est élue avec la valeur maximal de vote je trie dans un dictionnaire qui va regroupé pour chaque valeur de vote que j’ai positionné en clé cette fois et pour chacune de ses clé(nombre de vote) les valeur participant .
+Exemple : ({2: ['Morty', 'Neo'], 5: ['Ashe', 'Lara'], 6: ['Squall']}) pour la clé 2 nous nous retrouvons avec la valeur liste qui comprend Morty et Neo.
+Je trie ensuite par ordre croissant les clés avec la fonction « sorted » et la retourne avec la fonction « reverse », ce qui va faire que ma première clé est le gagnant avec le plus de vote en cas d’inégalité.
+
+J’ai traité par la suite les cas ou il y a égalité dans le maximum de vote.
+Ici j’aurais dû faire des boucles mais je me suis « embourbé »
+Ce qui a donné que pour chaque égalité par rapport à maxVote je crée dans une bibliothèque nommée result2 dans laquelle je remets les clés des noms des participants et je refais la sélection mais en ne gardant que les votes avec Excellent dans le string
+
+La particularité du résultat est que le programme affichera en cas d’égalité gagnante ou non que le vainqueur a gagné avec une égalité car il prend en compte que le fait qu’il ait égalité avant le deuxième vote.
+Donc en cas d’égalité final il affiche les deux participants gagnant avec égalité sur deux lignes.
+Mais aussi il affichera un gagnant individuel gagnant avec égalité car il y avait égalité au premier tour.
