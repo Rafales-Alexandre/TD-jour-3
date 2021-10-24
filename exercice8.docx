@@ -1,4 +1,4 @@
-Exercice8 :
+Exercice8 : (lien word: https://1drv.ms/w/s!AnI9RlbftNc6jTmiRB76gmHAse6E?e=iPbs7a)
 Le programme est fonctionnel mais très mal optimisé et ne prend pas en compte l’ajout de nouveau participant ou qualité de vote différente.
 Dans un premier temps j’ai attribué les différentes variables de l’énoncé :
 Le nombre de vote, les différents participants et la qualité des votes.
